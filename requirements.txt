@@ -1,6 +1,6 @@
 streamlit
-faiss-cpu
 openai
+faiss-cpu
 numpy
 feedparser
 newspaper3k
