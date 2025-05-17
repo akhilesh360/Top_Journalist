@@ -4,3 +4,4 @@ faiss-cpu
 numpy
 feedparser
 newspaper3k
+python-dotenv
