@@ -1,7 +1,8 @@
 import streamlit as st
 import subprocess
 import json
-
+from dotenv import load_dotenv
+load_dotenv()
 # ── 50 Topic Keywords ──
 TOPICS = [
     "AI","Machine Learning","Data Science","Crypto","Blockchain",
@@ -46,7 +47,7 @@ topic = st.selectbox(
     help="Type to filter the list"
 )
 
-k = st.slider("How many journalists to show?", 1, 10, 5)
+k = st.slider("How many journalists to show?", 1, 10)
 
 if st.button("Run"):
     with st.spinner(f"Querying for top {k} in “{topic}”…"):
