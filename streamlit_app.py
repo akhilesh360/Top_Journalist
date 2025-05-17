@@ -1,3 +1,5 @@
+import sys, subprocess
+subprocess.check_call([sys.executable, "-m", "pip", "install", "openai"])
 import streamlit as st
 import subprocess
 import json
